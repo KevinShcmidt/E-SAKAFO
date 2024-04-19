@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.sticky{
+    position: fixed;
+    box-shadow: 0vw 0.1vw 0.4vw rgba(61, 61, 61, 0.692);
+    z-index: 1;
+    background-color: #fff;
+
+    padding: 1.7vw;
+}
+.ouvert p{
+    color: #ffffff;
+    width: 15%;
+    text-align: center;
+    padding: 0.4vw 1vw;
+    background-color: green;
+    border-radius: 0.25vw;
+    font-family: sans-serif;
+    font-size: 0.7vw;
+    position: absolute;
+    right: 2vw;
+    top: 13vw;
+}
+.ferme p{
+    color: #ffffff;
+    width: 15%;
+    text-align: center;
+    padding: 0.4vw 1vw;
+    background-color: red;
+    border-radius: 0.25vw;
+    font-family: sans-serif;
+    font-size: 0.7vw;
+    position: absolute;
+    right: 2vw;
+    top: 13vw;
+}
+header{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    background-color: #fff;
+    transition: .5s ease-in;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 7vh;
+}
+.logo img{
+    height: 100%;
+}
+.nav{
+    width: 70%;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    margin-left: 2vw;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #222020;
+    font-size: 1vw;
+}
+.panier{
+    position: relative;
+}
+.panier i{
+    font-size: 1.7vw;
+}
+.nbr{
+    position: absolute;
+    top: -0.7vw;
+    right: -0.5vw;
+    background-color: rgb(190, 0, 0);
+    padding: 0.2vw 0.4vw;
+    font-size: 1vw;
+    border-radius: 50%;
+    color: #ffffff;
+}
+.connex{
+    text-transform: uppercase;
+    padding: 0.5vw 1vw;
+    background-color: rgb(190, 0, 0);
+    border-radius: 0.3vw; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connex a{
+    color: #ffffff;
+    
+}
+.section1{
+    width: 100%;
+    background: url('../image/bg.jpg') rgb(99, 97, 97);    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: darken;
+}
+.desc{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+}
+.desc h1{
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 3vw;
+    font-family: sans-serif;
+}
+.desc form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+}
+.desc form input{
+    width: 80%;
+    padding: 0.6vw;
+    border-radius: 0.3vw 0 0 0.3vw; 
+    border: none;
+    outline: none;
+}
+.desc form button{
+    padding: 0.6vw;
+    width: 20%;
+    border: none;
+    background-color: rgb(190, 0, 0);
+    color: #ffffff;
+    font-size: 1vw;
+    border-radius: 0 0.3vw 0.3vw 0; 
+}
+.section2{
+    width: 100%;
+    padding: 2vw;
+    
+}
+.section2 h2{
+    width: 5%;
+    font-family: sans-serif;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    padding-bottom: 1.2vw;
+    border-bottom: 0.4vw solid rgb(190, 0, 0);
+    border-radius: 0.2vw;
+}
+.containt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;  
+}
+.filter{
+    width: 25%;
+    /* position: fixed; */
+}
+.title{
+    width: 100%;
+    background-color: rgb(190, 0, 0);
+    padding: 1vw;
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1vw;
+    border-radius: 1vw 1vw 0 0;
+}
+.filter p{
+    padding: 1vw;
+    font-size: 1Vw;
+    color: #222020;
+    font-family: sans-serif;
+}
+.fil{
+    
+    width: 100%;
+    background-color: rgb(173, 1, 1);
+    border: none;
+    color: #f8f6f6;
+    font-size: 1vw;
+    padding: 0.5vw;
+    border-radius: 0 0 0.5vw 0.5vw;
+    margin-top: 1vw;
+}
+.left{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-size: 0.8vw;
+    color: #222020;
+}
+.inpt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+.resto{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    gap: 2vw;
+
+}
+.box{
+    width: 30vw;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f6f6;
+    border-radius: 0.5vw;
+    gap: 1vw;
+    flex-direction: column;
+    position: relative;
+    
+}
+.box:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in;
+}
+.box .img{
+    width: 100%;
+    height: 30vh;
+}
+.box .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5vw;
+}
+
+.ds h3{
+    color: #222020;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    padding: 0 1vw;
+}
+.lieu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 1vw;
+}
+.addres{
+    display: flex;
+    justify-content: center;
+    gap: 0.3vw;
+    align-items: center;
+    color: #3d3a3a;
+    font-size: 1vw;
+}
+.btn{
+    color: #ffffff;
+    padding: 0.4vw 0.8vw;
+    border-radius: 0.2vw;
+    background-color: rgb(190, 0, 0);
+    font-size: 1vw;
+}
+.btn a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: #ffffff;
+}
+footer{
+    background-color: rgb(190, 0, 0);
+    padding: 2vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5vw;
+    font-family: sans-serif;
+}
+.toph{
+    width: 3%;
+}
+.toph img{
+    width: 100%;
+    height: auto;
+}
+.media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.media a{
+    color: #d6d5d5;
+    padding: 0.5vw;
+    font-size: 1vw;
+}
+.media .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 2vw;
+    border: 1px solid #d6d5d5;
+    border-radius: 50%;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    font-size: 1vw;
+    color: #d6d5d5;
+}
+hr{
+    color: #d6d5d5;
+    width: 100%;
+}
+.copy p{
+    color: #d6d5d5;
+    text-transform: uppercase;
+    font-size: 1vw;
+}
